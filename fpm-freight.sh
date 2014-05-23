@@ -22,7 +22,7 @@ function installFPM()
 	# Download the latest fpm files from Jordan Sissel's Github repo
 		echo
 		echo -e '\e[01;34m+++ Downloading the latest FPM files...\e[0m'
-		cd /root
+		cd
 		git clone https://github.com/jordansissel/fpm
 		echo -e '\e[01;37;42mThe latest fpm files have been successfully downloaded!\e[0m'
 
