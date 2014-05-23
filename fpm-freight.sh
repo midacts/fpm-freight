@@ -10,8 +10,7 @@
 # To God only wise, be glory through Jesus Christ forever. Amen.
 # Romans 16:27, I Corinthians 15:1-4
 #---------------------------------------------------------------
-function installFPM()
-{
+function installFPM(){
 	# Prerequisite Software
 		echo
 		echo -e '\e[01;34m+++ Installing the prerequisite software...\e[0m'
@@ -35,8 +34,7 @@ function installFPM()
 		gem install fpm
 		echo -e '\e[01;37;42mFPM has been successfully installed!\e[0m'
 }
-function installFreight()
-{
+function installFreight(){
 	# Add Richard Crowley's repo to your apt sources
 		echo
 		echo -e '\e[01;34m+++ Downloading rcrowley'\''s rcrowley.list and GPG files...\e[0m'
@@ -86,8 +84,7 @@ function configFreight(){
 		apt-get update
 		echo -e '\e[01;37;42mYour GPG key has been successfully created!\e[0m'
 }
-function configApache2()
-{
+function configApache2(){
 	# Install the required packages
 		echo
 		echo -e '\e[01;34m+++ Installing Apache2...\e[0m'
@@ -113,8 +110,7 @@ function configApache2()
 		echo -e '\e[01;37;42mThe apache service has been successfully restarted!\e[0m'
 
 }
-function doAll()
-{
+function doAll(){
 	# Calls Function 'installFPM'
 		echo -e "\e[33m=== Install FPM ? (y/n)\e[0m"
 		read yesno
