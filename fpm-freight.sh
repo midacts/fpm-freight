@@ -1,7 +1,7 @@
 #!/bin/bash
 # FPM with Freight Installation Script
-# Date: 20th of May, 2014
-# Version 1.0
+# Date: 31st of July, 2014
+# Version 1.1
 #
 # Author: John McCarthy
 # Email: midactsmystery@gmail.com
@@ -79,6 +79,9 @@ function configFreight(){
 		echo
 		echo -e '\e[01;34m+++ Creating your GPG key...\e[0m'
 		gpg --gen-key
+
+	# Creates the freight directory
+		mkdir -p /var/cache/freight
 
 	# Updates your apt sources
 		apt-get update
